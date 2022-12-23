@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "source Sans Pro", sans-serif;
+	box-sizing: border-box;
+	text-transform: capitalize;
+}
+
+main {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: #e8e4d9;
+	font-size: 0.77rem;
+}
+
+#container {
+	position: relative;
+	background: #fff;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	width: 280px;
+	height: auto;
+	border: 1px solid #d4a64cb3;
+}
+
+/* starting page */
+
+#startingPage, #middlePage, #lastPage {
+	gap: 40px;
+	place-items: center;
+}
+
+.none {
+	display: none !important;
+}
+
+.show {
+	display: grid !important;
+}
+
+#hint {
+	position: absolute;
+	top: 2%;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	font: bold 0.8rem "source Sans Pro", sans-serif; 
+}
+
+.display {
+	background: #fff;
+	color: #f58600;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	width: 300px;
+	height: auto;
+	border: 1px solid #d4a64cb3;
+}
+
+#startingPage {
+	display: grid;
+}
+
+#startingPage h2 {
+	margin-top: 20px;
+}
+
+#startingPage p {
+	margin-bottom: 10px;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+button {
+	border: 0;
+	outline: 0;
+	border-radius: 0.25rem;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.4s linear;
+}
+
+button.active {
+	background: linear-gradient(to right, #f58600, #f6c458) !important;
+}
+
+#btnContainer button {
+	width: 70px;
+	height: 30px;
+	background: #4a4a4a;
+}
+
+#startBtn, #guessBtn, #againBtn {
+	width: 120px;
+	height: 32px;
+	font-weight: bold;
+	background: linear-gradient(to right, #f58600, #f6c458);
+}
+
+#guessBtn:hover, #startBtn:hover {
+	background: transparent;
+	color: #f58600;
+	border: 1px solid #f58600;
+}
+
+/* middle page */
+
+#middlePage {
+	display: none;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	padding: 0.5rem 0;
+	background: orangered;
+	width: 100%;
+	text-align: center;
+	color: white;
+	border-radius: 0.5rem 0.5rem 0 0;
+	font-weight: bold;
+}
+
+header #minGuess {
+	border-right: 2px solid white;
+	padding-right: 0.25rem;
+}
+
+#middlePage h2{
+	margin-top: 60px;
+}
+
+#middlePage #guessInput {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#middlePage input {
+	height: 70px;
+	width: 70px;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	background: orange;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	border-radius: 0.5rem;
+	margin-bottom: 20px;
+}
+
+#middlePage input:focus {
+	border: 2px solid #d4a64cb3;
+}
+
+#middlePage input::placeholder {
+	opacity: 1;
+	color: white;
+}
+
+#middlePage p {
+	font: bold 0.84rem "source Sans Pro", sans-serif;
+	margin-bottom: 60px;
+}
+
+#middlePage samp {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0.7rem 1.5rem;
+	background: orangered;
+	color: white;
+	font: bold 0.8rem "source Sans Pro", sans-serif;
+	border-radius: 0.5rem 0;
+}
+
+/* last page */
+
+#lastPage {
+	display: none;
+}
+
+#lastPage h2 {
+	color: orangered;
+	font: bold 1.7rem "georgia";
+}
+
+#lastPage p, #lastPage samp {
+	font: bold 1rem "source Sans Pro", sans-serif;
+}

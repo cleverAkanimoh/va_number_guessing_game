@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess the number</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<p id="hint"></p>
+			<section id="container">
+				<!-- starting page -->
+				<div id="startingPage">
+					<h2>Guess the number</h2>
+					<div id="btnContainer">
+						<button class="btn">easy</button>
+						<button class="btn">medium</button>
+						<button class="btn">hard</button>
+					</div>
+					<button id="startBtn">start game</button>
+				</div>
+
+				<!-- middle page -->
+				<div id="middlePage">
+					<header>
+					</header>
+					<h2>guess the number</h2>
+					<div id="guessInput">
+						<input type="text" placeholder="00" />
+						<button id="guessBtn">Guess</button>
+					</div>
+					<p>guess the number & get the hint</p>
+					<samp></samp>
+				</div>
+
+                <div id="lastPage">
+                    <h2>congratulations</h2>
+                    <p id="resultText">you win</p>
+                    <samp>lives left 0</samp>
+                    <button id="quitBtn">quit</button>
+                </div>
+			</section>
+		</main>
+
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
